@@ -17,9 +17,12 @@ limitations under the License.
 :root {
    /* Modify these to change your theme colors: */
    --primary: #09F;
-   --text: #CCC;
-   --background: #080808;
+   --text: #9c9c9c;
+   --background: #010101;
    --background-elevated: #222;
+   --sidebar-active-bg: #5e4e2e;
+   --sidebar-active-text: #bcdb9c;
+    --sidebar-hover-text: #4a3c30;
 
    /* These should be less important: */
    --background-hover: rgba(255, 255, 255, 0.1);
@@ -30,7 +33,7 @@ limitations under the License.
    --border-bright: var(--primary);
 
    --text-bright: #FFF;
-   --text-special: var(--primary);
+   --text-special: var(--sidebar-active-text);
 
    --scrollbar-background: #000;
    --scrollbar-border: var(--primary);
@@ -47,7 +50,7 @@ h1, h2, h3, h4 {
    z-index: 1;
 }
 
-/*.TeamSidebarItem.unreads .TeamSidebarItem-indicator {
+.TeamSidebarItem.unreads .TeamSidebarItem-indicator {
    background-color: var(--border-bright) !important;
    opacity: 1;
 }
@@ -55,7 +58,7 @@ h1, h2, h3, h4 {
 .TeamSidebarItem-unreadHighlights {
    background-color: var(--border-bright) !important;
    color: var(--text-bright) !important;
-}*/
+}
 
 #msgs_scroller_div::-webkit-scrollbar-track, #client_body::before, .client_container,
 #search_terms, #client_body, #footer, ts-message, .channel_header, ts-jumper ts-jumper-container,

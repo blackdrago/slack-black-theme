@@ -47,7 +47,7 @@ h1, h2, h3, h4 {
    z-index: 1;
 }
 
-.TeamSidebarItem.unreads .TeamSidebarItem-indicator {
+/*.TeamSidebarItem.unreads .TeamSidebarItem-indicator {
    background-color: var(--border-bright) !important;
    opacity: 1;
 }
@@ -55,7 +55,7 @@ h1, h2, h3, h4 {
 .TeamSidebarItem-unreadHighlights {
    background-color: var(--border-bright) !important;
    color: var(--text-bright) !important;
-}
+}*/
 
 #msgs_scroller_div::-webkit-scrollbar-track, #client_body::before, .client_container,
 #search_terms, #client_body, #footer, ts-message, .channel_header, ts-jumper ts-jumper-container,

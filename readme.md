@@ -18,8 +18,7 @@ Find your Slack's application directory.
 Open up the most recent version (e.g. `app-2.5.1`) then open
 `resources\app.asar.unpacked\src\static\index.js`
 
-Note: As of app-3.0.0 and higher, the above file will no longer work. Instead open
-`resources\app.asar.unpacked\src\static\ssb-interop.js`
+As of `app-3.0.0` and higher, the changes below must also be applied in `resources\app.asar.unpacked\src\static\ssb-interop.js`
 
 At the very bottom, add
 
@@ -42,6 +41,25 @@ document.addEventListener("DOMContentLoaded", function() {
       --background: #080808;
       --background-elevated: #222;
    }
+   /* Modify these for the hover-over highlighting colors
+   div.c-message.c-message--light.c-message--hover
+	{
+       color: #fff !important;
+	    background-color: #111 !important;
+	}
+	span.c-message__body,
+	a.c-message__sender_link,
+	span.c-message_attachment__media_trigger.c-message_attachment__media_trigger--caption,
+	div.p-message_pane__foreword__description span
+	{
+			color: #afafaf !important;
+	}
+	pre.special_formatting {
+		background-color: #222 !important;
+		color: #8f8f8f !important;
+		border: solid;
+		border-width: 1 px !important;
+	}
    `
 
    // Insert a style tag into the wrapper view

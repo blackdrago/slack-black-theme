@@ -36,30 +36,38 @@ document.addEventListener("DOMContentLoaded", function() {
    let customCustomCSS = `
    :root {
       /* Modify these to change your theme colors: */
-      --primary: #09F;
-      --text: #CCC;
-      --background: #080808;
-      --background-elevated: #222;
-   }
-   /* Modify these for the hover-over highlighting colors
-   div.c-message.c-message--light.c-message--hover
-	{
-       color: #fff !important;
-	    background-color: #111 !important;
-	}
-	span.c-message__body,
-	a.c-message__sender_link,
-	span.c-message_attachment__media_trigger.c-message_attachment__media_trigger--caption,
-	div.p-message_pane__foreword__description span
-	{
-			color: #afafaf !important;
-	}
-	pre.special_formatting {
-		background-color: #222 !important;
-		color: #8f8f8f !important;
-		border: solid;
-		border-width: 1 px !important;
-	}
+      --primary: #a59056;
+      --text: #cccccc;
+      --background: #010101;
+      --background-elevated: #111111;
+	  --background-hover: rgba(22, 22, 22, 0.1);
+	  --background-light: #333333;
+	  --background-bright: #555555;
+      --border-dim: #666;
+      --border-bright: var(--primary);
+      --text-bright: #FFF;
+      --text-special: var(--sidebar-active-text);
+      --scrollbar-background: #000;
+      --scrollbar-border: var(--primary);
+    }
+    div.c-message.c-message--light.c-message--hover
+    {
+        color: #fff !important;
+        background-color: #222 !important;
+    }
+    span.c-message__body,
+    a.c-message__sender_link,
+    span.c-message_attachment__media_trigger.c-message_attachment__media_trigger--caption,
+    div.p-message_pane__foreword__description span
+    {
+        color: #afafaf !important;
+    }
+    pre.special_formatting {
+        background-color: #222 !important;
+        color: #8f8f8f !important;
+        border: solid;
+        border-width: 1 px !important;
+    }
    `
 
    // Insert a style tag into the wrapper view

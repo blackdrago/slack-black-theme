@@ -68,6 +68,15 @@ document.addEventListener("DOMContentLoaded", function() {
         border: solid;
         border-width: 1 px !important;
     }
+    div.c-virtual_list__scroll_container {
+        background-color: black !important;
+    }
+    .p-message_pane .c-message_list:not(.c-virtual_list--scrollbar), .p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider {
+            z-index: 0;
+   }
+   div.c-message__content:hover {
+       background-color: black !important;
+   }
    `
 
    // Insert a style tag into the wrapper view

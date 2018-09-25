@@ -30,7 +30,8 @@ document.addEventListener("DOMContentLoaded", function() {
    let webviews = document.querySelectorAll(".TeamView webview");
 
    // Fetch our CSS in parallel ahead of time
-   const cssPath = 'https://cdn.rawgit.com/blackdrago/slack-black-theme/master/custom.css';
+   //const cssPath = 'https://cdn.rawgit.com/blackdrago/slack-black-theme/master/custom.css';
+   const cssPath = 'https://cdn.rawgit.com/blackdrago/slack-black-theme/0c33e6e56fa58e1cd9b25d35ad0f32921aec62ba/custom.css';
    let cssPromise = fetch(cssPath).then(response => response.text());
 
    let customCustomCSS = `
@@ -77,6 +78,18 @@ document.addEventListener("DOMContentLoaded", function() {
    div.c-message__content:hover {
        background-color: black !important;
    }
+   .c-search_message__body {
+    color: var(--text);
+}
+.p-search_filter__datepicker_trigger:hover {
+    color: var(--text);
+}
+.c-input_select_options_list__empty_state {
+    color: var(--text);
+}
+.p-file_details__name {
+    color: var(--text);
+}
    `
 
    // Insert a style tag into the wrapper view

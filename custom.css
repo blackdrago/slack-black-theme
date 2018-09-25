@@ -22,7 +22,7 @@ limitations under the License.
    --background-elevated: #222;
    --sidebar-active-bg: #5e4e2e;
    --sidebar-active-text: #bcdb9c;
-    --sidebar-hover-text: #4a3c30;
+   --sidebar-hover-text: #4a3c30;
 
    /* Older Values:
    --background-hover: rgba(22, 22, 22, 0.1);
@@ -704,17 +704,6 @@ ts-jumper ts-jumper-container {
 /** 
  * Latest CSS
  */
-.p-channel_sidebar__channel,
-.p-channel_sidebar__link,
-.p-channel_sidebar__channel:link,
-.p-channel_sidebar__link:link,
-.p-channel_sidebar__channel:visited,
-.p-channel_sidebar__link:visited,
-.p-channel_sidebar__channel:hover,
-.p-channel_sidebar__link:hover {
-   color: var(--text) !important;
-}
-
 /* Channel with unread messages */
 .p-channel_sidebar__channel--unread:not(.p-channel_sidebar__channel--muted):not(.p-channel_sidebar__channel--selected) .p-channel_sidebar__name,
 .p-channel_sidebar__link--unread:not(.p-channel_sidebar__link--selected) .p-channel_sidebar__name,
@@ -758,4 +747,3 @@ ts-jumper input[type="text"],
 .c-message__body {
     color: var(--text);
 }
-

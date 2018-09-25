@@ -860,3 +860,111 @@ ts-jumper input[type="text"],
    font-size: 3rem;
    margin-top: 3px !important;
 }
+
+
+/* preferences page and modals in general*/
+#fs_modal, .modal, .modal-header, .modal-footer {
+   background-color: var(--background-elevated);
+}
+
+#fs_modal .fs_modal_btn:hover {
+    color: var(--text);
+}
+
+#fs_modal, #fs_modal h1, #fs_modal h2,
+#fs_modal h3, #fs_modal h4, #fs_modal h5,
+.modal, .modal h1, .modal h2, .modal h3,
+.modal h4, .modal h5 {
+   color: var(--text);
+}
+
+#fs_modal .fs_modal_file_viewer_header {
+   background: transparent;
+}
+#fs_modal .fs_modal_file_viewer_content .viewer {
+   background: var(--background);
+}
+.fs_modal_file_viewer_header .control_btn {
+   color: var(--text) !important;
+}
+
+.section_rollup:hover:not(.is_active) {
+   background: var(--background-hover);
+   color: inherit;
+}
+
+#fs_modal #fs_modal_sidebar a {
+  padding: 10px;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.01);
+  border-radius: 10px;
+}
+
+#fs_modal #fs_modal_sidebar a:hover {
+  border-color: var(--border-dim);
+}
+
+#fs_modal #fs_modal_sidebar a.is_active {
+  border-color: var(--border-bright);
+}
+#fs_modal.prefs_modal legend {
+    color: var(--text);
+}
+/* modal content */
+.c-fullscreen_modal__header,
+.c-fullscreen_modal__content {
+    background-color: var(--background-elevated);
+}
+.ts_toggle .ts_toggle_secondary_label {
+           color: var(--text);
+}
+/* modal transition */
+#fs_modal_bg, .fs_modal_bg {
+    background: var(--background-elevated);
+}
+/* new search modal */
+.c-search_autocomplete footer,
+.c-search,
+.c-search__tabs,
+.c-search__input_box { background-color: unset; }
+
+.c-search,
+.c-search__tabs,
+.c-search__input_and_close__close { color: unset; }
+.p-message_limit_banner {
+    color: unset;
+    background-color: unset;
+}
+.p-search_filter__title_text {
+                             background-color: var(--background);
+}
+.p-search_filter__dates {
+                        background-color: var(--background-elevated) !important;
+}
+.c-search_autocomplete__suggestion_content .c-channel_name .c-deprecated-icon, .c-search_autocomplete__suggestion_content .c-search_autocomplete__suggestion_icon, .c-search_autocomplete__suggestion_content .c-search_autocomplete__suggestion_text .filetype_description,
+.c-search_autocomplete__suggestion_content .c-search_autocomplete__suggestion_text .token
+{ 
+  color: var(--text);
+}
+
+.token {
+       background-color: var(--background-elevated) !important;
+}
+.c-search_modal .popover>div { background-color: var(--background); }
+
+.c-search_autocomplete__suggestion_content {
+    color: var(--text-bright);
+}
+.c-team__display-name, .c-unified_member__display-name, .c-usergroup__handle {
+    color: var(--text);
+}
+
+.c-search_message__body {
+    color: var(--text);
+}
+.p-search_filter__datepicker_trigger:hover {
+    color: var(--text);
+}
+.c-input_select_options_list__empty_state {
+    color: var(--text);
+}

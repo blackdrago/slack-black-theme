@@ -691,3 +691,17 @@ ts-jumper, ts-jumper.active {
 ts-jumper ts-jumper-container {
   box-shadow: 0 5px 20px rgba(0,0,0,1);
 }
+
+/** Pulling in from minor changes in commit: https://github.com/Nockiro/slack-black-theme/commit/520c7e65790399610c8ed44d7d93e0680cbee3e3 **/
+.c-search_message__body {
+    color: var(--text);
+}
+.p-search_filter__datepicker_trigger:hover {
+    color: var(--text);
+}
+.c-input_select_options_list__empty_state {
+    color: var(--text);
+}
+.p-file_details__name {
+    color: var(--text);
+}

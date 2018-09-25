@@ -235,7 +235,7 @@ ts-message .action_hover_container .btn_msg_action,
 }
 
 .search_result_with_extract {
-  box-shadow: 0 1px 10px #555 !important;
+  box-shadow: 0 1px 10px var(--background-elevated) !important;
 }
 
 .ql-placeholder {
@@ -268,6 +268,17 @@ span.match {
 .mention > .mention {
    /* I'm assuming this is a Slack bug */
    border: none;
+}
+
+.mention_rxn {
+   border-radius: 5px;
+   margin: 1px 5px;
+}
+
+.mention_rxn .mention_rxn_summary .app_preview_link,
+.mention_rxn .mention_rxn_summary .member_preview_link,
+.mention_rxn .mention_rxn_summary .mention_rxn_summary_members {
+   color: var(--text);
 }
 
 pre.special_formatting{
@@ -967,4 +978,67 @@ ts-jumper input[type="text"],
 }
 .c-input_select_options_list__empty_state {
     color: var(--text);
+}
+/* tooltips */
+.ts_tip .ts_tip_tip {
+        color: var(--text);
+}
+
+/* "only visible to you" highlight */
+.c-message--ephemeral, .c-message--sli_highlight_negative {
+    background: var(--background-hover);
+}
+
+/* "jump to.." */
+ts-jumper .p-jumper__help {
+    background: var(--background);
+}
+
+#client-ui .searchable_member_list .team_list_item:hover {
+    background: var(--background-hover);
+}
+
+.msg_inline_attachment_column.column_border {
+    background-color: var(--border-dim);
+}
+
+#threads_msgs_scroller_div .threads_caught_up_divider .divider_line,
+#threads_msgs_scroller_div .threads_caught_up_divider .divider_label {
+   background-color: var(--background-elevated);
+   border: 1px solid var(--border-dim);
+   color: var(--text);
+}
+
+/* unreads */
+.unread_empty_state {
+   color: var(--text);
+}
+.unread_group_header,
+.sli_briefing, .sli_briefing__header, .sli_briefing__title,
+.sli_briefing_view__footer_title, .bottom_mark_all_read {
+   background-color: var(--background);
+   color: var(--text);
+   border-color: var(--border-dim);
+}
+.unread_group_header button {
+   color: var(--text-special);
+}
+/* profile */
+#fs_modal #fs_modal_footer {
+   background-color:var(--background-elevated)
+}
+.flex_pane_showing #col_flex {
+   border-color: var(--border-dim);
+}
+/* setting menu fix */
+#fs_modal.prefs_modal .global_notification_block {
+   background: transparent;
+   border: none;
+}
+#fs_modal.prefs_modal .global_notification_block.selected {
+   background: transparent;
+   border: 1px solid var(border-bright);
+}
+.notification_example.mac {
+  color: #555459; /* default color - leave unthemed */
 }
